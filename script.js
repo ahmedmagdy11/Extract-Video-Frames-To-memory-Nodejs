@@ -1,7 +1,7 @@
 const fs = require('fs')
 const getVideoWH = require('./vidMetadata')
 const readVideo =async(path)=>{
-
+const ExtractFrames = require('./ExtractFrames')
     const {width,height} = await getVideoWH(path)
     const HW = height.toString()+'x'+width.toString()
     const logStream = fs.createWriteStream('./logFile.log');
