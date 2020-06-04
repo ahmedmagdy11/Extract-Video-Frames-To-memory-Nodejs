@@ -20,20 +20,16 @@ const readVideo =async(path)=>{
       ffmpeg.stderr.pipe(logStream);
       
       let frames = []
-      let pushedCounter = 0
-      let errorCounter =0
       ffmpeg.stdout.pipe(new ExtractFrames("FFD8FF")).on('data', (data) => {
           frames.push(data)
     })
       return new Promise((resolve)=>{
         ffmpeg.on('close', function (code) {
-          console.log("pushed",pushedCounter)
-          console.log("Error",errorCounter)
           resolve(frames)
-        
           console.log('child process exited with code ' + code);
       })
     });
     
   }
   
+module.exports = readVideo
