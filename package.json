@@ -1,0 +1,27 @@
+{
+  "name": "extractvideoframes",
+  "version": "1.0.0",
+  "description": "a script that extracts video frames to memory using ffmpeg and nodejs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedmagdy11/Extract-Video-Frames-To-memory-Nodejs.git"
+  },
+  "keywords": [
+    "ffmpeg",
+    "frames"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedmagdy11/Extract-Video-Frames-To-memory-Nodejs/issues"
+  },
+  "homepage": "https://github.com/ahmedmagdy11/Extract-Video-Frames-To-memory-Nodejs#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
